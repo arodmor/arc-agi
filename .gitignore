@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+.venv/
+.ruff_cache/
+
+# Secrets
+.env
+
+# OS
+.DS_Store
