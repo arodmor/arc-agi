@@ -29,7 +29,8 @@ anyone trying to make sense of it.
 3. [How solvers have evolved](#3-how-solvers-have-evolved)
 4. [ARC Prize 2026 — the three tracks](#4-arc-prize-2026--the-three-tracks)
 5. [Why ARC-AGI-3 is a real departure](#5-why-arc-agi-3-is-a-real-departure)
-6. [Sources](#sources)
+6. [My work](#6-my-work)
+7. [Sources](#sources)
 
 Deeper dives live in [`docs/`](docs/): a fuller [history](docs/history.md), an
 annotated tour of [solver approaches](docs/approaches.md), and a side-by-side of
@@ -170,6 +171,29 @@ genuinely agentic task did **not** belong to the biggest LLM.
 More on the static-vs-interactive distinction in
 [`docs/arc-agi-2-vs-3.md`](docs/arc-agi-2-vs-3.md).
 
+## 6. My work
+
+This hub is the explainer; the hands-on work lives in three sibling repos. I'm
+*entering* both 2026 tracks and *researching* recursive models — the directions below
+are what I'm exploring, not claimed results.
+
+- 🧩 [**arc-agi-2**](https://github.com/arodmor/arc-agi-2) — my **static-track**
+  workspace. The approach I'm exploring is a **two-branch ensemble**, both branches
+  adapted to ARC-AGI-2: an **LLM branch** (a Qwen model with **test-time training**)
+  and a **TRM branch** (a tiny recursive model). Both stay inside the no-internet
+  sandbox.
+- 🕹️ [**arc-agi-3**](https://github.com/arodmor/arc-agi-3) — my **interactive-track**
+  workspace. Here I'm exploring an **object-centric world model**, adapting
+  **LeCun's JEPA** (Joint Embedding Predictive Architecture) — predicting in latent
+  space to model an environment and plan — to the ARC-AGI-3 environments.
+- 🔁 [**recursive-reasoning-models**](https://github.com/arodmor/recursive-reasoning-models)
+  — a cross-cutting research thread (TRM and recursive reasoning) that feeds the TRM
+  branch above and fits the sandbox rules well.
+
+> **A note on honesty (it matters for a public repo).** Any score, rank, or result
+> attributed to someone else — TRM's reported numbers, the leaderboard figures above —
+> is cited to its source and never presented as mine.
+
 ---
 
 ## Sources
@@ -189,6 +213,8 @@ re-check before reuse.
 - ARC Prize 2025: Technical Report — <https://arxiv.org/abs/2601.10904>
 - ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence — <https://arxiv.org/abs/2603.24621>
 - ARC-AGI-3 docs / quickstart — <https://docs.arcprize.org/>
+- *Less is More: Recursive Reasoning with Tiny Networks* (TRM) — <https://arxiv.org/abs/2510.04871>
+- Y. LeCun, *A Path Towards Autonomous Machine Intelligence* (2022) — <https://openreview.net/forum?id=BZ5a1r-kVsf>
 
 *Prose and figures in this repo are © 2026 Antonio Rodriguez-Moral, licensed
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); code is [MIT](LICENSE).*
